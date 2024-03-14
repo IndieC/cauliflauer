@@ -1,0 +1,42 @@
+
+* {
+    color: aquamarine;
+    font-size: 60px;
+        font-family: "Averia Libre", system-ui;
+        font-weight: 300;
+        font-style: italic;
+}
+
+p {
+    color: aquamarine;
+    font-size: 60px;
+        font-family: "Averia Libre", system-ui;
+        font-weight: 300;
+        font-style: normal;
+
+}
+
+.liebe {
+    color: brown;
+}
+
+/* body {
+    background-color: beige;
+} */
+
+.kontrast {
+    background-color: blue;
+}
+.hass {margin-left: 100px;margin-top: 500px; padding: 200px; background-color: red; border: 100px black solid;}
+
+
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  @media screen (max-width: 600px) {
+    * 
+  }
+
