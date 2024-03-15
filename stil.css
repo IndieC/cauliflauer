@@ -1,0 +1,93 @@
+/* Some basic styling */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header-Stilisierung */
+header {
+    display: flex;
+    flex-direction: column; /* Anordnung der Elemente in einer Spalte */
+    align-items: center; /* Zentrieren der Elemente horizontal */
+    justify-content: center; /* Zentrieren der Elemente vertikal */
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Title-Stilisierung */
+.title {   
+    font-family: "Averia Libre", system-ui;
+    font-size: 40px;
+    color: #000000;
+    margin: 0;
+}
+
+/* Navigation-Stilisierung */
+nav {
+    text-align: center;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Stilisierung für den Sidebar-Button */
+.openbtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    z-index: 999;
+}
+
+.openbtn:hover {
+    background-color: #ddd;
+}
+
+/* Stilisierung für die Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
