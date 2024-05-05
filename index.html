@@ -1,68 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playground</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <meta http-equiv="refresh" content="2; url=playground.html">
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width) */
+            height: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
+
 <body>
- <script src="https://cdn.tailwindcss.com"></script>
-    hallo WELT AF feasfadsfgbiajsdgfbajsdfbau
-    <br>
-    <br>
-    <p>Nenene</p>
-    <h1>Head
-        <i>hjaha</i>
-        <b>jajaja</b>
-    </h1>
-    <h5 class= "liebe"  >h6666 
-</h5>
-
-<div class="mt-6 flex max-w-md gap-x-4">
-    <label for="email-address" class="sr-only">Email address</label>
-    <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
-    <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
-  </div>
-
-<div class="kontrast">
-    <h1>india
-        
-    </h1>
-    <p>
-        not india
-    </p>
-    <img src="./img/cauliflower-1433019501uml.jpg" 
-    alt="IMAGE LOADED JUST LOOK HARDER" class="hass">
-
-</div>
-
-<script>
-    // Function to generate a random number between min (inclusive) and max (inclusive)
-    function random(min, max) {
-        return Math.random() * (max - min) + min;
-    }
-
-    // Function to set background color with random red and alpha values
-    function setRandomBackgroundColor() {
-        let randRed = parseInt(random(0, 255));
-        let randAlpha = random(0.25, 0.80).toFixed(2);
-        let randgreen = parseInt(random(0, 255))
-        let color = `rgba(${randRed}, ${randgreen}, 255, ${randAlpha})`;
-        document.body.style.backgroundColor = color;
-    }
-
-    // Call the function when the page loads and when it's resized
-    window.onload = setRandomBackgroundColor;
-</script>
-<a href="/playground.html"><p>PLAY G R O U N D</p></a>
-<a href="https://github.com/IndieC/cauliflauer/blob/f7b66f52d32916eb34e433c92a727641688a1172/.gitignore"><p>download</p> </a>
-
-    ne
-
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 </body>
-</html>

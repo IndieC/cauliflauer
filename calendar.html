@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Videos Calendar</title>
+    <!--link href="fullcalendar/main.css" rel="stylesheet"-->
+    <script src="fullcalendar-6.1.11\dist\index.global.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    // Define events for each day with video URLs
+                    //{
+                       // title: 'Today\'s Video',
+                       // start: new Date(), // Today's date
+                       // url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                    //},
+                    {
+                        title: 'Anfang von SPIELPLATZ',
+                        start: '2024-05-09', // Today's date
+                        //url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                    },
+                    // Add more events for other days
+                ],
+                eventClick: function(info) {
+                    // Handle event click (e.g., navigate to video URL)
+                    info.jsEvent.preventDefault(); // Prevent browser navigation
+                    window.open(info.event.url, '_blank');
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
+</head>
+<body>
+    <h1>Daily Videos Calendar</h1>
+    
+    <div id="calendar"></div>
+</body>
+</html>
