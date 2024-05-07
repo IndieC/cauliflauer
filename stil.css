@@ -91,3 +91,76 @@ nav a:hover {
     font-size: 36px;
     margin-left: 50px;
 }
+
+* {
+    color: aquamarine;
+    font-size: 60px;
+        font-family: "Averia Libre", system-ui;
+        font-weight: 300;
+        font-style: italic;
+}
+
+p {
+    color: aquamarine;
+    font-size: 60px;
+        font-family: "Averia Libre", system-ui;
+        font-weight: 300;
+        font-style: normal;
+
+}
+
+.liebe {
+    color: brown;
+}
+
+/* body {
+    background-color: beige;
+} */
+
+.kontrast {
+    background-color: blue;
+}
+.hass {margin-left: 100px;margin-top: 500px; padding: 200px; background-color: red; border: 100px black solid;}
+
+
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+ /*' @media screen and (max-width: 600px) {
+    * {
+        /* Your CSS rules for screens with a maximum width of 600px 
+    }
+} */
+
+.container {
+    display: flex;
+  }
+
+  .list {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between lists */
+  }
+
+.dividerline_light {
+    border-top: 2px solid black;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.dividerline {
+    border-top: 6px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
